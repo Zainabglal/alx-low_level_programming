@@ -21,13 +21,13 @@ int main(void)
 				putchar(' ');
 				putchar(x / 10 + '0');
 				putchar(x % 10 + '0');
-				if ((w / 10) + (w % 10) + (x / 10) + (x % 10) < 35)
+				if (w != 98 || x != 99 )
+
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-
 		}
 	}
 	putchar('\n');
