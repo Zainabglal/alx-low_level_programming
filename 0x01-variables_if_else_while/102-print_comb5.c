@@ -8,34 +8,26 @@
  */
 int main(void)
 {
-	int w = 0;
-	int x = 0;
-	int y = 0;
-	int z = 0;
+	int w, x;
 
-	for (w = 0; w <= 9; w++)
+	for (w = 0; w < 100; w++)
 	{
-		for (x = 0; x <= 9; x++)
+		for (x = 0; x < 100; x++)
 		{
-			for (y = w; y <= 9; y++)
+			if (((w / 10) + (w % 10)) < ((x / 10) + (x % 10)))
 			{
-				for (z = 0; z <= 9; z++)
+				putchar(w / 10 + '0');
+				putchar(w % 10 + '0');
+				putchar(' ');
+				putchar(x / 10 + '0');
+				putchar(x % 10 + '0');
+				if ((w / 10) + (w % 10) + (x / 10) + (x % 10) < 35)
 				{
-					if ((w + x) < (y + z))
-					{
-						putchar(w + '0');
-						putchar(x + '0');
-						putchar(' ');
-						putchar(y + '0');
-						putchar(z + '0');
-						if (w + x + y + z != 35)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');
