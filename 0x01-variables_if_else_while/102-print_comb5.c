@@ -13,18 +13,20 @@ int main(void)
 	for (w = 0; w < 100; w++)
 	{
 		for (x = 0; x < 100; x++)
-		{	
-			putchar(w / 10 + '0');
-			putchar(w % 10 + '0');
-			putchar(' ');
-			putchar(x / 10 + '0');
-			putchar(x % 10 + '0');
-			if (w == 98 && x == 99)
-				continue;
-
-			putchar(',');
-			putchar(' ');
-			
+		{
+			if (w != x)
+			{
+				putchar(w / 10 + '0');
+				putchar(w % 10 + '0');
+				putchar(' ');
+				putchar(x / 10 + '0');
+				putchar(x % 10 + '0');
+				if (w != 98 || x != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
