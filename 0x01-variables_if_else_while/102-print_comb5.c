@@ -8,11 +8,13 @@
  */
 int main(void)
 {
-	int w, x;
+	int w = 0;
+	int x;
 
-	for (w = 0; w < 100; w++)
+	while (w <= 99)
 	{
-		for (x = 0; x < 100; x++)
+		x = w;
+		while (x <= 99)
 		{
 			if (w != x)
 			{
@@ -27,7 +29,9 @@ int main(void)
 					putchar(' ');
 				}
 			}
+			x++;
 		}
+		w++;
 	}
 	putchar('\n');
 	return (0);
