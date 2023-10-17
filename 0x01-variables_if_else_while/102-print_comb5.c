@@ -12,7 +12,6 @@ int main(void)
 	int x = 0;
 	int y = 0;
 	int z = 0;
-	int a = (w + x + y + z);
 
 	for (w = 0; w <= 9; w++)
 	{
@@ -29,10 +28,10 @@ int main(void)
 						putchar(' ');
 						putchar(y + '0');
 						putchar(z + '0');
-						if (a != 35)
+						if (w + x + y + z != 35)
 						{
-							putchar(' ');
 							putchar(',');
+							putchar(' ');
 						}
 					}
 				}
