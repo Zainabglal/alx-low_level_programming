@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (x = 0; x < 100; x++)
 		{
-			if (((w / 10) + (w % 10)) < ((x / 10) + (x % 10)))
+			if (w != x)
 			{
 				putchar(w / 10 + '0');
 				putchar(w % 10 + '0');
