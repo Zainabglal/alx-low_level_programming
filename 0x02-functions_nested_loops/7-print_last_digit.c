@@ -20,8 +20,8 @@ int _abs(int num)
  */
 int print_last_digit(int l)
 {
-	int mod = _abs(l) % 10;
+	int mod = (l % 10);
 
-	_putchar(mod + '0');
-	return (mod);
+	_putchar(_abs(mod) + '0');
+	return (_abs(mod));
 }
