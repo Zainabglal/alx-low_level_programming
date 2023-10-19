@@ -22,7 +22,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			if (r <= 9 && b!= 0 ) 
+			if (r <= 9 && b != 0)
 			{
 				_putchar(' ');
 				_putchar(r + '0');
@@ -30,14 +30,14 @@ void times_table(void)
 			else if (r > 9)
 			{
 				_putchar(r / 10 + '0');
-				_putchar(r % 10 +'0');
+				_putchar(r % 10 + '0');
 			}
-			else 
+			else
 				_putchar(r + '0');
 			b++;
 		}
 		_putchar('\n');
-		a+=1;
+		a++;
 	}
 
 }
