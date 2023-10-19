@@ -10,16 +10,15 @@ int main(void)
 	int sum = 0;
 	int res = 0;
 
-	for (t = 3; t < 1024; t+=3)
+	for (t = 3; t < 1024; t += 3)
 	{
 		sum = sum + t;
 	}
-	for (f = 3; f < 1024; f+=5)
+	for (f = 5; f < 1024; f += 5)
 	{
 		res = res + f;
 	}
-	printf("sum of multiples of 3 is %d", sum);
-	printf("sum of multiples of 5 is %d", res);
+	printf("%d\n", sum + res);
 
 	return (0);
 }
