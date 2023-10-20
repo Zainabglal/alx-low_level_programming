@@ -11,12 +11,11 @@ int main(void)
 	int s = 1;
 	int n = f + s;
 
-	printf("%d, ", f);
 	for (i = 3; i <= 50; i++)
 	{
 		printf("%d, ", n);
-		if (i == 50)
-			printf("%d\n",n);
+		if (i == 49)
+			printf("%d\n", n);
 		f = s;
 		s = n;
 		n = f + s;
