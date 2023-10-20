@@ -6,19 +6,13 @@
 
 int main(void)
 {
-	int t, f;
+	int t;
 	int sum = 0;
-	int res = 0;
 
-	for (t = 3; t < 1024; t += 3)
-	{
-		sum = sum + t;
-	}
-	for (f = 5; f < 1024; f += 5)
-	{
-		res = res + f;
-	}
-	printf("%d\n", sum + res);
+	for (t = 0; t < 1024; t++)
+		if ((t % 3) == 0 || (t  % 5) == 0)
+			sum = sum + t;
+	printf("%i\n", sum);
 
 	return (0);
 }
