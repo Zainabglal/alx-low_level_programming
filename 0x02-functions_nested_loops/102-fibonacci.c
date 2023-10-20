@@ -6,16 +6,18 @@
  */
 int main(void)
 {
-	int i;
-	int f = 0;
-	int s = 1;
-	int n = f + s;
+	long int i;
+	long int f = 0;
+	long int s = 1;
+	long int n = f + s;
 
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 52; i++)
 	{
-		printf("%d, ", n);
-		if (i == 49)
-			printf("%d\n", n);
+		printf("%ld", n);
+		if (i != 52)
+			printf(", ");
+		else
+			printf("\n");
 		f = s;
 		s = n;
 		n = f + s;
