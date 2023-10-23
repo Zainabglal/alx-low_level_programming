@@ -22,7 +22,8 @@ int main(void)
 				putchar(a / 10 + '0');
 			putchar(a % 10 + '0');
 		}
-		putchar(' ');
+		if (a != 100)
+			putchar(' ');
 	}
 
 	putchar('\n');
